@@ -11,22 +11,19 @@ class TDAArbol : public Object {
         TDAArbol();
         ~TDAArbol();
 
-        virtual void            insertar(Nodo*);
-        virtual void            eliminar(Nodo*);
-        virtual bool            buscar(Nodo*);
-        virtual void            imprimir();
-        virtual void            imprimirInOrder();
-        virtual void            imprimirPreOrder();
-        virtual void            imprimirPostOrder();
-        virtual void            vaciar();
-        virtual bool            estaVacio();
-        virtual int             getAltura();
-        virtual int             getNivel();
-        virtual int             getTamanio();
-        virtual Nodo*           getRaiz();
-        virtual void            setRaiz(Nodo*);
-        bool                    equals(Nodo*);
-        string                  toString();
+//        virtual void            insertar(Nodo*) = 0;
+//        virtual void            eliminar(Nodo*) = 0;
+//        virtual bool            buscar(Nodo*) = 0;
+//        virtual void            imprimir() = 0;
+//        virtual void            imprimirInOrder() = 0;
+//        virtual void            imprimirPreOrder() = 0;
+//        virtual void            imprimirPostOrder() = 0;
+//        virtual void            vaciar() = 0;
+//        virtual bool            estaVacio() = 0;
+//        virtual Nodo*           getRaiz() = 0;
+//        virtual void            setRaiz(Nodo*);
+//        bool                    equals(Object*);
+//        string                  toString();
 
     private:
         Nodo*                   raiz;
