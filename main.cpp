@@ -96,18 +96,17 @@ void algoArboles() {
             string archivo;
             cin >> archivo;
 
-            leerArchivo.open("\\Users\\Corra\\CLionProjects\\treeGraph\\"+archivo+".txt");
+            leerArchivo.open(R"(\Users\Corra\CLionProjects\treeGraph\)"+archivo+".txt");
             string texto; // guardamos todo texto, por si acaso
 
             if (!leerArchivo) {
                 print("No se encuentra el archivo");
             } else {
                 string linea;
-
                 print("Contenido del archivo:");
 
                 while (getline(leerArchivo, linea)) {
-                    texto.append(linea + "\n");
+                    texto.append(linea);
                     cout << linea << endl;
                 }
 

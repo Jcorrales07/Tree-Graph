@@ -9,7 +9,6 @@ TDAArbol::TDAArbol() {
 
 //Destructor
 TDAArbol::~TDAArbol() {
-//    TDAArbol::vaciar();
     delete raiz;
 }
 

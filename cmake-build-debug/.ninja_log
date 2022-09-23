@@ -11,3 +11,10 @@
 11	325	6856690175059544	CMakeFiles/treeGraph.dir/TDAArbol.cpp.obj	3673f5a5c59e05ce
 3	290	6856690908644223	CMakeFiles/treeGraph.dir/TDAArbol.cpp.obj	3673f5a5c59e05ce
 290	419	6856690909930682	treeGraph.exe	47a2b3b89640fcce
+11	321	6856692493914957	CMakeFiles/treeGraph.dir/TDAArbol.cpp.obj	3673f5a5c59e05ce
+2	486	6856692495556633	CMakeFiles/treeGraph.dir/main.cpp.obj	51390c66d37d3798
+486	642	6856692497107126	treeGraph.exe	47a2b3b89640fcce
+3	474	6856701400757104	CMakeFiles/treeGraph.dir/main.cpp.obj	51390c66d37d3798
+475	619	6856701402197143	treeGraph.exe	47a2b3b89640fcce
+3	453	6856702037154208	CMakeFiles/treeGraph.dir/main.cpp.obj	51390c66d37d3798
+454	583	6856702038448820	treeGraph.exe	47a2b3b89640fcce
