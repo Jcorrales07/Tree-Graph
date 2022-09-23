@@ -73,6 +73,12 @@ build CMakeFiles/treeGraph.dir/TDAArbol.cpp.obj: CXX_COMPILER__treeGraph_Debug C
   OBJECT_DIR = CMakeFiles\treeGraph.dir
   OBJECT_FILE_DIR = CMakeFiles\treeGraph.dir
 
+build CMakeFiles/treeGraph.dir/Elemento.cpp.obj: CXX_COMPILER__treeGraph_Debug C$:/Users/Corra/CLionProjects/treeGraph/Elemento.cpp || cmake_object_order_depends_target_treeGraph
+  DEP_FILE = CMakeFiles\treeGraph.dir\Elemento.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\treeGraph.dir
+  OBJECT_FILE_DIR = CMakeFiles\treeGraph.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target treeGraph
@@ -81,7 +87,7 @@ build CMakeFiles/treeGraph.dir/TDAArbol.cpp.obj: CXX_COMPILER__treeGraph_Debug C
 #############################################
 # Link the executable treeGraph.exe
 
-build treeGraph.exe: CXX_EXECUTABLE_LINKER__treeGraph_Debug CMakeFiles/treeGraph.dir/main.cpp.obj CMakeFiles/treeGraph.dir/Object.cpp.obj CMakeFiles/treeGraph.dir/Nodo.cpp.obj CMakeFiles/treeGraph.dir/TDAArbol.cpp.obj
+build treeGraph.exe: CXX_EXECUTABLE_LINKER__treeGraph_Debug CMakeFiles/treeGraph.dir/main.cpp.obj CMakeFiles/treeGraph.dir/Object.cpp.obj CMakeFiles/treeGraph.dir/Nodo.cpp.obj CMakeFiles/treeGraph.dir/TDAArbol.cpp.obj CMakeFiles/treeGraph.dir/Elemento.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\treeGraph.dir

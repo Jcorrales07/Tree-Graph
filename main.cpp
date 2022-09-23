@@ -1,10 +1,15 @@
 #include <iostream>
-
+#include <fstream>
+#include <unordered_map>
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
+using std::ifstream;
+using std::ofstream;
+using std::ios;
+using std::unordered_map;
 
 void print(string mensaje);
 
@@ -16,6 +21,8 @@ void algoArboles();
 void algoGrafos();
 
 int main() {
+
+
     int opcion;
     do {
         opcion = menuPrincipal();
@@ -74,15 +81,50 @@ int menuGrafos() {
     return opcion;
 }
 
+//
 void algoArboles() {
     int opcion;
+    ifstream leerArchivo;
 
     do {
         opcion = menuArboles();
         cout << endl; // [=== ...]
 
         if (opcion == 1) {
-            print("Codificador");
+            print("[=== Codificador Huffman ===]");
+            cout << "Nombre de archivo :";
+            string archivo;
+            cin >> archivo;
+
+            leerArchivo.open("\\Users\\Corra\\CLionProjects\\treeGraph\\"+archivo+".txt");
+            string texto; // guardamos todo texto, por si acaso
+
+            if (!leerArchivo) {
+                print("No se encuentra el archivo");
+            } else {
+                string linea;
+
+                print("Contenido del archivo:");
+
+                while (getline(leerArchivo, linea)) {
+                    texto.append(linea + "\n");
+                    cout << linea << endl;
+                }
+
+            }
+
+            leerArchivo.close();
+
+            unordered_map<char, int> tFrecuencias;
+
+            for (auto letra : texto) {
+                tFrecuencias[letra]++;
+            }
+
+            for (auto letra: tFrecuencias) {
+               cout << "Letra: " << letra.first << " : " << letra.second << endl;
+            }
+
         } else if (opcion == 2) {
             print("Decodificador");
         } else if (opcion == 3) {
@@ -95,6 +137,8 @@ void algoArboles() {
     } while (opcion != 3);
 }
 
+
+//Despues
 void algoGrafos() {
     int opcion;
     cout << endl; // [=== ...]

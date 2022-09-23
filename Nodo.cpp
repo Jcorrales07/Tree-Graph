@@ -1,4 +1,5 @@
 #include "Nodo.h"
+#include "Elemento.h"
 
 /*
  * Constructor por default
