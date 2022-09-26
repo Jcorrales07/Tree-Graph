@@ -13,19 +13,20 @@ class TDAArbol : public Object {
         ~TDAArbol();
 
         virtual void            insertarNodo(Nodo*) = 0;
-//        virtual void            eliminarNodo(Nodo*) = 0;
-//        virtual bool            buscarNodo(Nodo*) = 0;
+        virtual void            eliminarNodo(Nodo*) = 0;
+        virtual bool            buscarNodo(Nodo*) = 0;
         virtual void            imprimir() = 0;
-//        virtual void            vaciar() = 0;
-//        bool                    equals(Object*);
-//        string                  toString();
+        virtual void            vaciar() = 0;
+        bool                    equals(Object*);
+        string                  toString();
 
     private:
-        Nodo*                   raiz;
-        virtual bool            estaVacio() = 0;
+    virtual bool            estaVacio() = 0;
         virtual Nodo            *insertarNodoRec(Nodo*, Nodo*) = 0;
         virtual void            imprimirRec(Nodo*) = 0;
 
+protected:
+    Nodo*                   raiz;
 };
 
 

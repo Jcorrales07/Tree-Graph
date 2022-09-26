@@ -1,3 +1,3 @@
-C:/Users/Corra/CLionProjects/treeGraph/cmake-build-debug/CMakeFiles/treeGraph.dir
-C:/Users/Corra/CLionProjects/treeGraph/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Corra/CLionProjects/treeGraph/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/CMakeFiles/treeGraph.dir
+C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/CMakeFiles/rebuild_cache.dir
