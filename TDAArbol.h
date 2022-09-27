@@ -13,7 +13,7 @@ class TDAArbol : public Object {
         ~TDAArbol();
 
         virtual void            insertarNodo(Nodo*) = 0;
-        virtual void            eliminarNodo(Nodo*) = 0;
+        virtual Object * eliminarNodo(Nodo*) = 0;
         virtual bool            buscarNodo(Nodo*) = 0;
         virtual void            imprimir() = 0;
         virtual void            vaciar() = 0;

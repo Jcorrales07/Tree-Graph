@@ -1,6 +1,9 @@
 #ifndef NODO_H
 #define NODO_H
 
+#include <iostream>
+#include <unordered_map>
+
 #include "Object.h"
 #include "Elemento.h"
 
@@ -18,14 +21,13 @@ class Nodo : public Object {
         void            setDerecho(Nodo* derecho);
         Nodo*           getDerecho();
 
-        bool            equals(Object*);
-        string          toString();
+        // Metodos de object
+        virtual bool    equals(Object*);
+        virtual string  toString();
 
-    protected:
-        Nodo*           izquierdo;
+protected:
+        Nodo*           izquierdo, *derecho;
         Object*         item;
-        Nodo*           derecho;
-
 };
 
 

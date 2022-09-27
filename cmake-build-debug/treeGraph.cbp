@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="treeGraph"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="treeGraph">
+				<Option output="C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/treeGraph.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include/c++/11.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include/c++/11.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include/c++/11.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/include-fixed"/>
+					<Add directory="/mingw64/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 treeGraph"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="treeGraph/fast">
+				<Option output="C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/treeGraph.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include/c++/11.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include/c++/11.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include/c++/11.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/include-fixed"/>
+					<Add directory="/mingw64/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 treeGraph/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/larap/CLionProjects/Tree-Graph/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/Elemento.cpp">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/Elemento.h">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/Nodo.cpp">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/Nodo.h">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/Object.cpp">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/Object.h">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/TDAArbol.cpp">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/TDAArbol.h">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/adjacencyList.cpp">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/adjacencyList.h">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/main.cpp">
+			<Option target="treeGraph"/>
+		</Unit>
+		<Unit filename="C:/Users/larap/CLionProjects/Tree-Graph/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

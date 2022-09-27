@@ -13,4 +13,7 @@ add_executable(
         TDAArbol.cpp
         TDAArbol.h
         Elemento.cpp
-        Elemento.h adjacencyList.cpp adjacencyList.h)
+        Elemento.h
+        adjacencyList.cpp
+        adjacencyList.h
+)

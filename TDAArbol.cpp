@@ -50,4 +50,18 @@ bool TDAArbol::estaVacio() {
     return raiz == nullptr;
 }
 
+bool TDAArbol::equals(Object *object) {
+    if (dynamic_cast<TDAArbol *>(object) == nullptr) {
+        return false;
+    } else {
+        auto *arbol = dynamic_cast<TDAArbol *>(object);
+        return raiz == arbol->raiz;
+    }
+}
+
+string TDAArbol::toString() {
+    return std::string("Arbol { raiz: " + raiz->toString() + "}");
+}
+
+
 

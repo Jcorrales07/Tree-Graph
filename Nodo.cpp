@@ -13,7 +13,7 @@ Nodo::Nodo() {
 /*
  * Constructor con parametros
  * **/
-Nodo::Nodo(Nodo* izquierdo, Object *pObject, Nodo* derecho) {
+Nodo::Nodo(Nodo *izquierdo, Object *pObject, Nodo *derecho) {
     this->izquierdo = izquierdo;
     this->item = pObject;
     this->derecho = derecho;
@@ -22,7 +22,7 @@ Nodo::Nodo(Nodo* izquierdo, Object *pObject, Nodo* derecho) {
 /*
  * Destructor
  * **/
-Nodo::~Nodo(){
+Nodo::~Nodo() {
     delete izquierdo;
     delete item;
     delete derecho;
@@ -31,14 +31,14 @@ Nodo::~Nodo(){
 /*
  * Setea el objeto para el nodo
  * **/
-void Nodo::setItem(Object* item){
+void Nodo::setItem(Object *item) {
     this->item = item;
 }
 
 /*
  * Devuelve el objeto del nodo
  * **/
-Object* Nodo::getItem(){
+Elemento Nodo::getItem() {
     return this->item;
 }
 
@@ -52,7 +52,7 @@ void Nodo::setDerecho(Nodo *derecho) {
 /*
  * Devuelve el nodo siguiente
  * **/
-Nodo* Nodo::getDerecho(){
+Nodo *Nodo::getDerecho() {
     return derecho;
 }
 
@@ -66,16 +66,20 @@ void Nodo::setIzquierdo(Nodo *izquierdo) {
 /*
  * Devuelve el nodo anterior
  * **/
-Nodo* Nodo::getIzquierdo(){
+Nodo *Nodo::getIzquierdo() {
     return izquierdo;
 }
 
 // Metodos de object
 
 bool Nodo::equals(Object *) {
-    return false;
+    if (this == nullptr) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 string Nodo::toString() {
-    return std::string("Nodo {  item: " + item->toString() + "}");
+    return "Nodo";
 }

@@ -3,23 +3,34 @@
 
 
 #include "TDAArbol.h"
-#include "id.h"
+#include "Nodo.h"
 
 class adjacencyList : public TDAArbol {
 public:
     adjacencyList();
+
     ~adjacencyList();
 
-    void insertar(Elemento) ;
-    void eliminar(Object*) ;
-    Object* buscar(Object*) ;
-    string toString() override;
-    bool esVacio();
-    void vaciar() override;
-    void imprimir() override;
+    void insertarNodo(Nodo *nodo);
+
+    Object *eliminarNodo(Nodo *nodo);
+
+    bool buscarNodo(Nodo *nodo);
+
+    void imprimir();
+
+    void vaciar();
+
+private:
+    bool estaVacio();
+
+    Nodo *insertarNodoRec(Nodo *nodo, Nodo *raiz);
+
+    void imprimirRec(Nodo *raiz);
+
+    Nodo *raiz;
 
 protected:
-    Nodo* raiz;
     int size;
     Elemento **lista;
 };

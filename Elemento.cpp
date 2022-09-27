@@ -32,7 +32,11 @@ string Elemento::getLetra() {
 }
 
 bool Elemento::equals(Object *) {
-    return false;
+    if (this->numero == ((Elemento*)this)->numero) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 string Elemento::toString() {

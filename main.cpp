@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <unordered_map>
+#include "adjacencyList.h"
 
 using std::cout;
 using std::cin;
@@ -11,14 +12,23 @@ using std::ofstream;
 using std::ios;
 using std::unordered_map;
 
+adjacencyList *list = nullptr;
+
+static ifstream leerArchivos;
+
 void print(string mensaje);
 
 int menuPrincipal();
+
 int menuArboles();
+
 int menuGrafos();
 
 void algoArboles();
+
 void algoGrafos();
+
+void codificadorHuffman();
 
 int main() {
 
@@ -84,48 +94,17 @@ int menuGrafos() {
 //
 void algoArboles() {
     int opcion;
-    ifstream leerArchivo;
+
 
     do {
         opcion = menuArboles();
         cout << endl; // [=== ...]
 
         if (opcion == 1) {
-            print("[=== Codificador Huffman ===]");
-            cout << "Nombre de archivo :";
-            string archivo;
-            cin >> archivo;
-
-            leerArchivo.open(R"(\Users\Corra\CLionProjects\treeGraph\)"+archivo+".txt");
-            string texto; // guardamos todo texto, por si acaso
-
-            if (!leerArchivo) {
-                print("No se encuentra el archivo");
-            } else {
-                string linea;
-                print("Contenido del archivo:");
-
-                while (getline(leerArchivo, linea)) {
-                    texto.append(linea);
-                    cout << linea << endl;
-                }
-
-            }
-
-            leerArchivo.close();
-
-            unordered_map<char, int> tFrecuencias;
-
-            for (auto letra : texto) {
-                tFrecuencias[letra]++;
-            }
-
-            for (auto letra: tFrecuencias) {
-               cout << "Letra: " << letra.first << " : " << letra.second << endl;
-            }
-
+            codificadorHuffman();
         } else if (opcion == 2) {
             print("Decodificador");
+
         } else if (opcion == 3) {
             print("Regresar al Menu principal");
         } else {
@@ -151,7 +130,7 @@ void algoGrafos() {
             print("Prim");
         } else if (opcion == 3) {
             print("Floyd");
-        } else if (opcion == 4){
+        } else if (opcion == 4) {
             print("Regresar al Menú principal");
         } else {
             print("Opcion no valida");
@@ -159,4 +138,94 @@ void algoGrafos() {
         cout << endl; // [=== ...]
 
     } while (opcion != 4);
+}
+
+void codificadorHuffman() {
+
+    list = new adjacencyList();
+
+    print("[=== Codificador Huffman ===]");
+    cout << "Nombre de archivo :";
+    string archivo;
+    cin >> archivo;
+
+    leerArchivos.open(R"(\Users\larap\CLionProjects\Tree-Graph\)" + archivo + ".txt");
+    string texto; // guardamos todo texto, por si acaso
+
+    if (!leerArchivos) {
+        print("No se encuentra el archivo");
+    } else {
+        string linea;
+        print("Contenido del archivo:");
+
+        while (getline(leerArchivos, linea)) {
+            texto.append(linea);
+            cout << linea << endl;
+        }
+
+    }
+
+    leerArchivos.close();
+
+    unordered_map<char, int> tFrecuencias;
+
+    for (auto letra: texto) {
+        tFrecuencias[letra]++;
+    }
+
+    for (auto letra: tFrecuencias) {
+        cout << "Letra: " << letra.first << " : " << letra.second << endl;
+    }
+
+    // Codificar
+
+
+
+
+    // Guardar en un archivo
+    ofstream guardarArchivo;
+    guardarArchivo.open(R"(\Users\larap\CLionProjects\Tree-Graph\)" + archivo + "_codificado.txt", ios::out);
+    if (guardarArchivo.fail()) {
+        print("No se pudo crear el archivo");
+        exit(1);
+    } else {
+        for (auto letra: tFrecuencias) {
+            guardarArchivo << letra.first << " : " << letra.second << endl;
+        }
+    }
+
+    guardarArchivo.close();
+
+    Object *obj = new Elemento();
+
+
+}
+
+void decodificadorHuffman() {
+    print("[=== Decodificador Huffman ===]");
+    cout << "Nombre de archivo :";
+    string archivo;
+    cin >> archivo;
+
+    leerArchivos.open(R"(\Users\larap\CLionProjects\Tree-Graph\)" + archivo + ".txt");
+    string texto; // guardamos todo texto, por si acaso
+
+    // Leer el archivo codificado y guardar en un mapa
+
+    if (!leerArchivos) {
+        print("No se encuentra el archivo");
+    } else {
+        string linea;
+        print("Contenido del archivo:");
+
+        while (getline(leerArchivos, linea)) {
+            texto.append(linea);
+            cout << linea << endl;
+        }
+
+
+
+    }
+
+
 }

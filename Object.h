@@ -2,7 +2,10 @@
 #define OBJECT_H
 
 #include <string>
+#include <fstream>
+
 using std::string;
+using std::ifstream;
 
 class Object {
 
@@ -10,6 +13,7 @@ class Object {
         virtual bool equals(Object*) = 0;
         virtual string toString() = 0;
 
+    void leerArchivo(string basicString);
 };
 
 

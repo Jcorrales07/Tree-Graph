@@ -1,0 +1,3 @@
+Z:\JetBrains\Toolbox\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\treeGraph.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\treeGraph.dir/objects.a @CMakeFiles\treeGraph.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\treeGraph.dir/objects.a -Wl,--no-whole-archive -o treeGraph.exe -Wl,--out-implib,libtreeGraph.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\treeGraph.dir\linklibs.rsp
