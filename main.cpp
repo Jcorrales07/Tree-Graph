@@ -1,6 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <unordered_map>
+#include "Nodo.h"
+#include "vector"
+#include "Elemento.h"
 
 using std::cout;
 using std::cin;
@@ -121,8 +124,9 @@ void algoArboles() {
             }
 
             for (auto letra: tFrecuencias) {
-               cout << "Letra: " << letra.first << " : " << letra.second << endl;
+               cout << "Letra: " << letra.first << " | Veces: " << letra.second << endl;
             }
+
 
         } else if (opcion == 2) {
             print("Decodificador");
